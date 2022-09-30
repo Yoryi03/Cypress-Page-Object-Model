@@ -47,7 +47,7 @@ describe("Contact form validation", () => {
     });
   });
   dataTests.forEach((test) => {
-    it.only("Check the form validation without order reference field should trigger a danger alert", () => {
+    it("Check the form validation without order reference field should trigger a danger alert", () => {
       contactUsPage.selectSubject(1);
       contactUsPage.typeEmail(test.vEmail);
       contactUsPage.typeMessage(test.message);

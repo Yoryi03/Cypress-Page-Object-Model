@@ -1,7 +1,7 @@
 {
-  "name": "nodc",
+  "name": "challange",
   "version": "1.0.0",
-  "description": "How to get started the project",
+  "description": "jobsity challenge",
   "main": "cypress.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,10 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/Yoryi03/challange.git"
   },
-  "author": "",
+  "author": "Yorgi Valdez",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Yoryi03/challange/issues"
   },
-  "homepage": "https://github.com/Yoryi03/challange#readme"
+  "homepage": "https://github.com/Yoryi03/challange#readme",
+  "devDependencies": {
+    "cypress": "^10.9.0",
+    "cypress-file-upload": "^5.0.8"
+  }
 }
