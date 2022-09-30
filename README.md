@@ -5,7 +5,7 @@
 ##  Jobsity challenge project created using [Cypress](https://www.cypress.io), [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript) y [Node.js](https://nodejs.org/en/)
 
 ### General Requirements
-
+- Install  npm install cypress --save-dev
 - Install [Node.js](https://nodejs.org/es/download/).
 - Install [git bash](https://git-scm.com/downloads).
 - Install Chrome, Firefox o Edge.
@@ -22,6 +22,12 @@ git clone [https://github.com/Yoryi03/challange.git]
 
 ```bash
 npm install
+```
+
+#### **Install the plugin.**
+
+```bash
+npm install --save-dev cypress-file-upload
 ```
 
 #### **Open the Test Runner**
