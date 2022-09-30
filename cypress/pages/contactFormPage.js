@@ -7,7 +7,7 @@ class contactUsPage {
     attachFile: () => cy.get("#fileUpload"),
     comment: () => cy.get("#message"),
     sendBtn: () => cy.get("#submitMessage"),
-    sucessAlert: () => cy.get(".alert-success"),
+    successAlert: () => cy.get(".alert-success"),
     dangerAlert: () => cy.get(".alert-danger"),
     uploadFile: () => cy.get("#fileUpload"),
     fileName: () => cy.get(".filename"),

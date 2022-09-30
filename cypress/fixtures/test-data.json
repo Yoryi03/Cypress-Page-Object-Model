@@ -1,8 +1,15 @@
 [
   {
     "name": "Using fixtures to represent data",
-    "vEmail": "hello@cypress.io",
-    "iEmail": "hellocypress.io",
-    "body": "Fixtures are a great way to mock data for responses to routes"
+    "vEmail": "Test@gmail.com",
+    "iEmail": "test@.com",
+    "orderReference": "h2",
+    "message": "This is a test",
+    "subjectAlert": "Please select a subject from the list provided.",
+    "emailAlert": "Invalid email address.",
+    "orderReferenceAlert": "Invalid order reference.",
+    "messageAlert": "The message cannot be blank.",
+    "successAlert": "Your message has been successfully sent to our team.",
+    "fileName": "upload.png"
   }
 ]
