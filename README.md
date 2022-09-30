@@ -28,9 +28,17 @@ npm install
 npx cypress open
 ```
 
-### Example Web
+## Start Running the tesets
 
-Utilizamos como ejemplo para realizar pruebas con el framework la siguiente [public web](http://automationpractice.com).
+<img src="https://firebasestorage.googleapis.com/v0/b/image-server-4d143.appspot.com/o/Screen%20Shot%202022-09-30%20at%205.14.09%20PM.png?alt=media&token=1841caf8-b861-4b77-9c68-45933cc311ee">
+
+<img src="https://firebasestorage.googleapis.com/v0/b/image-server-4d143.appspot.com/o/Screen%20Shot%202022-09-30%20at%205.15.45%20PM.png?alt=media&token=049411dc-6673-46cb-a44d-ba86670bbdc0">
+
+<img src="https://firebasestorage.googleapis.com/v0/b/image-server-4d143.appspot.com/o/Screen%20Shot%202022-09-30%20at%205.17.22%20PM.png?alt=media&token=3151c441-509e-4532-a9d1-2bc61d986688">
+
+### exercise Web
+
+[public web](http://automationpractice.com).
 
 ### Crédits
 
