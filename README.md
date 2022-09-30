@@ -1,4 +1,4 @@
-# jobcity challange
+# jobcity challenge
 
 How to get started the project
 
