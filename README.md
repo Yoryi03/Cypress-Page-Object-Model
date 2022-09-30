@@ -22,34 +22,10 @@ git clone [https://github.com/Yoryi03/challange.git]
 npm install
 ```
 
-#### **Install the plugin.**
-
-```bash
-npm install --save-dev cypress-file-upload
-```
-
 #### **Open the Test Runner**
 
 ```bash
-npm run cypress:open
-```
-
-#### **For test execution in Chrome Headless**
-
-```bash
-npm run cypress:run:chrome
-```
-
-#### **For test execution in Chrome Headed**
-
-```bash
-npm run cypress:run:headed
-```
-
-#### **For test execution in Firefox Headless**
-
-```bash
-npm run cypress:run:ff
+npx cypress open
 ```
 
 ### Example Web
