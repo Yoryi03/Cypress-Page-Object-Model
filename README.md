@@ -28,7 +28,7 @@ npm install
 npx cypress open
 ```
 
-## Start Running the tesets
+### Start Runing the test
 
 <img src="https://firebasestorage.googleapis.com/v0/b/image-server-4d143.appspot.com/o/Screen%20Shot%202022-09-30%20at%205.14.09%20PM.png?alt=media&token=1841caf8-b861-4b77-9c68-45933cc311ee">
 
