@@ -15,7 +15,7 @@
 #### **Clone the  repository:**
 
 ```bash
-git clone https://github.com/charlyautomatiza/starter-cypress.git
+git clone [https://github.com/Yoryi03/challange.git]
 ```
 
 #### **Install the dependencies.**
