@@ -10,6 +10,7 @@
     "orderReferenceAlert": "Invalid order reference.",
     "messageAlert": "The message cannot be blank.",
     "successAlert": "Your message has been successfully sent to our team.",
-    "fileName": "upload.png"
+    "fileName": "upload.png",
+    "logError": "this is a bug because the form should trigger an alert because the field is being sent empty"
   }
 ]

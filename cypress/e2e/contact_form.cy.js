@@ -14,6 +14,7 @@ describe("Contact form validation", () => {
       contactUsPage.typeEmail(test.vEmail);
       contactUsPage.typeOrderReference(test.orderReference);
       contactUsPage.typeMessage(test.message);
+      contactUsPage.elements.uploadFile().attachFile("upload.png");
       contactUsPage.clickSend();
       contactUsPage.elements
         .dangerAlert()
@@ -26,6 +27,7 @@ describe("Contact form validation", () => {
       contactUsPage.selectSubject(1);
       contactUsPage.typeOrderReference(test.orderReference);
       contactUsPage.typeMessage(test.message);
+      contactUsPage.elements.uploadFile().attachFile("upload.png");
       contactUsPage.clickSend();
       contactUsPage.elements
         .dangerAlert()
@@ -39,6 +41,7 @@ describe("Contact form validation", () => {
       contactUsPage.typeEmail(test.iEmail);
       contactUsPage.typeOrderReference(test.orderReference);
       contactUsPage.typeMessage(test.message);
+      contactUsPage.elements.uploadFile().attachFile("upload.png");
       contactUsPage.clickSend();
       contactUsPage.elements
         .dangerAlert()
@@ -51,8 +54,9 @@ describe("Contact form validation", () => {
       contactUsPage.selectSubject(1);
       contactUsPage.typeEmail(test.vEmail);
       contactUsPage.typeMessage(test.message);
+      contactUsPage.elements.uploadFile().attachFile("upload.png");
       contactUsPage.clickSend();
-      contactUsPage.elements
+      contactUsPage
         .dangerAlert()
         .should("exist")
         .contains(test.orderReferenceAlert);
@@ -62,6 +66,7 @@ describe("Contact form validation", () => {
     it("Check the form validation without message field should trigger a danger alert", () => {
       contactUsPage.selectSubject(1);
       contactUsPage.typeEmail(test.vEmail);
+      contactUsPage.elements.uploadFile().attachFile("upload.png");
       contactUsPage.clickSend();
       contactUsPage.elements
         .dangerAlert()
@@ -69,12 +74,15 @@ describe("Contact form validation", () => {
         .contains(test.messageAlert);
     });
   });
+
   dataTests.forEach((test) => {
-    it("Check the form validation with message field should trigger a sucess alert", () => {
+    it("Check the form validation with uploading a file should trigger a sucess alert ", () => {
       contactUsPage.selectSubject(1);
       contactUsPage.typeEmail(test.vEmail);
       contactUsPage.typeOrderReference(test.orderReference);
       contactUsPage.typeMessage(test.message);
+      contactUsPage.elements.uploadFile().attachFile("upload.png");
+      contactUsPage.elements.fileName().should("contains.text", test.fileName);
       contactUsPage.clickSend();
       contactUsPage.elements
         .successAlert()
@@ -83,13 +91,12 @@ describe("Contact form validation", () => {
     });
   });
   dataTests.forEach((test) => {
-    it("Check the form validation uploading a file should trigger a sucess alert", () => {
+    it("Check the form validation with all fields completed in a valid way should trigger a sucess alert", () => {
       contactUsPage.selectSubject(1);
       contactUsPage.typeEmail(test.vEmail);
       contactUsPage.typeOrderReference(test.orderReference);
       contactUsPage.typeMessage(test.message);
       contactUsPage.elements.uploadFile().attachFile("upload.png");
-      contactUsPage.elements.fileName().should("contains.text", test.fileName);
       contactUsPage.clickSend();
       contactUsPage.elements
         .successAlert()
