@@ -8,7 +8,7 @@
 - Install [git bash](https://git-scm.com/downloads).
 - Install Chrome, Firefox o Edge.
 
-### Instalación del framework de pruebas
+### Test Framework Instalation
 
 #### **Clone the repository:**
 
